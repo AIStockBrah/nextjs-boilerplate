@@ -29,11 +29,11 @@ export async function POST(request: Request) {
           prompt: "TNYMDRN, " + prompt.trim(),
           lora_scale: 0.77,
           num_outputs: 1, // Changed to 1 for web interface, but can be increased
-          aspect_ratio: "21:9",
+          aspect_ratio: "1:1",
           output_format: "png",
           prompt_strength: 0.77,
           extra_lora_scale: 0.77,
-          num_inference_steps: 34
+          num_inference_steps: 27
         }
       }),
     });
